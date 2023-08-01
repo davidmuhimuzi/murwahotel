@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,700&family=Poppins&family=Spectral+SC:wght@400;500&family=Spectral:ital,wght@0,200;0,400;1,400&display=swap');
+
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+}
+
+h2 {
+    color: #2C5C8C;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.navbar {
+    display: flex;
+    background-color: #ffff;
+    height: 15vh;
+    position: fixed;
+    top: 0%;
+    overflow: hidden;
+  }
+
+  .navbar-nav {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .nav-item {
+    margin-right: 2vw;
+  }
+
+  .nav-item a {
+    display: flex;
+    align-items: center;
+    color: #202020;
+    /* font-family: 'Alata', sans-serif; */
+  }
+
+  .nav-item img {
+    margin-right: 5px;
+  }
+
+  .navbar-brand {
+    width: 7.5%;
+    height: auto;
+  }
+
+  .navbar-brand img {
+    width: 100%;
+}
+
+.booknow{
+    box-shadow: 3px 3px #3a3a3a;
+    background-color: #189AB4;
+    color: #F5F5F5;
+}
+
+.booknow a{
+    color: #dfdddd;
+}
+/* Global Styles */
+body {
+    background-color: #F5F5F5;
+    
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Header Styles */
+.welcome-header{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(./images/nighthouse.jpeg) center/cover no-repeat;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+}
+
+header {
+    background-color: transparent;
+    padding: 1vw;
+    width: 100%;
+    overflow: visible;
+}
+
+
+.text-header {
+    padding: 3rem;
+}
+
+.text-header h1{
+    color: #2E2E2E;
+    font-weight: 600;
+    text-align: center;
+    font-style:italic;
+    font-size: 3.5vw;
+}
+
+.gallery-header {
+    text-align: center;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    border: 2px solid black;
+}
+
+.gallery-header h2 {
+    font-weight: 800;
+}
+
+#slides {
+    height: 30%;
+    width: 100%;
+}
+
+.booking-form {
+    padding-top: 15vh;
+    background-color: #F5F5F5;
+}
+
+
+.booking-form h2 {
+    padding-bottom: 6vh;
+    font-weight: 800;
+}
+
+.booking-pretext {
+    padding: 6vh 3vw 3vh 6vw;
+}
+
+.section1 {
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    background-color: #F5F5F5;
+    
+}
+
+.section1-text {
+    width: 45%;
+    padding:2vw;
+    top: 50%;
+    
+}
+.section1-text h2{
+    font-weight: 800;
+    font-size: 3vw;
+    color: #2C5C8C;
+    padding: 2rem 0 1rem 0;
+}
+.section1-text p {
+    font-weight: 500;
+    font-size: 1.3vw;
+    color: #3a3a3a;
+}
+
+.section1-image {
+    width: 55%;
+    height: auto;
+    border: 2vw solid #075264;
+    display: flex;
+    overflow: hidden;
+    padding: 4vw;
+}
+
+.section1-image img {
+    width: 100%;
+    position: relative;
+    
+}
+
+.section2 {
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    background-color: #075264;
+    
+}
+
+
+.section2-text {
+    padding: 1vw;
+    width: 45%;
+    padding-top: 4rem;
+}
+.section2-text h2{
+    font-family: 'Spectral SC';
+    font-weight: 800;
+    font-size: 3vw;
+    color: #78c8d8;
+}
+.section2-text p {
+    font-weight: 500;
+    font-size: 1.5vw;
+    color: #dfdddd;
+    font-family: 'Lora';
+}
+
+.section2-image {
+    width: 55%;
+    height: auto;
+    /* border: 2vw solid #F5F5F5; */
+    overflow: hidden;
+    padding: 4vw;
+}
+
+.section2-image img {
+    width: 100%;
+    position: relative;
+    
+}
+
+.section3 h2 {
+    padding: 10vh;
+    text-align: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.section3 li {
+    text-decoration: none;
+}
+
+.activities {
+    padding: 2vw;
+}
+.activities img {
+    width: 100%;
+    padding-top: 1vh;
+}
+
+.activities h3{
+    text-align: center;
+    color: #3a3a3a;
+}
+
+
+
+
+footer {
+    min-height: 20vh;
+    background-color: #2C5C8C;
+    text-align: center;
+    padding: 3vi;
+}
+
+.footer-logo img{
+    width: 50%;
+}
+
+/* Add your custom CSS styles here */
+.social-media-links {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    color: #f5f5f5;
+    
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .social-icon :hover {
+    color: #0AC2C2;
+  }
+  
+  
+
+/*  Light blue: #7bc7c5
+    blue: #2d54a1
+    Dark blue: #273576 */
+
+
+
+
+
+
+
+
