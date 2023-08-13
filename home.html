@@ -17,39 +17,60 @@
 		<link href="https://fonts.googleapis.com/css2?family=Alata&family=Instrument+Sans:wght@400;600&family=Lora:ital,wght@0,400;1,500;1,700&family=Montserrat:wght@500&family=Playfair+Display:ital,wght@0,400;1,500;1,600&family=Poppins:wght@200;300;400;500;800&family=Spectral+SC:wght@400;500&family=Spectral:ital,wght@0,200;0,400;1,400&display=swap" rel="stylesheet">
 	</head>
 	<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="20">
-
-
-		<nav class="navbar navbar-expand-lg">
-			<div class="navbar-brand img-fluid" href="#">
+        
+        <!--Responsive Nav Bar-->
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <div class="menu">
+					<ion-icon name="menu-outline"></ion-icon>
+				</div>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Links</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#accommodations">Accommodations</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#section3">Activities</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#section4">Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Book Now</a>
+                      </li>
+                    
+                  </ul>
+                  </form>
+                </div>
+              </div>
+			  <div class="navbar-brand">
 				<a class="nav-link" href="home.html">
-			  		<img src="images/maravillalogo.png" alt="Logo" class="img-fluid">
+					  <img src="images/maravillalogowhite.png" alt="Logo" class="img-fluid">
 				</a>
-			</div>   
-			<div class="navbare collapse navbar-collapse justify-content-end">
-			  <ul class="navbar-nav">
-				<li class="nav-item">
-				  <a class="nav-link" href="home.html">Home</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="#section2">Accommodations</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#section3">Activities</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="#section4">Gallery</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link booknow" href="booking.html">Book Now</a>
-				</li>
-			  </ul>
 			</div>
-		  </nav> 
+			
+			<div class="booknow">
+				Book Now
+			</div>
+			
+			
+            </div>
+          </nav>
+
+	 
 		<div class="welcome-header">
 		</div>
-		<!-- <div class="text-header">
-			<h1>Welcome to Maravilla Kivu Eco Resort!</h1>
-		</div> -->
+		
 		
 		<div class="section1" id="section1">
 			
@@ -66,13 +87,60 @@
 		<div class="section2" id="section2">
 			
 			<div class="section2-text">
-				<h2>In need of a place to escape stress?</h2>
-				<p>Immerse yourself in the tranquility of our thoughtfully designed eco-resort, where every detail has been carefully crafted to ensure an unforgettable stay. From our cozy accommodations to our eco-friendly practices, we strive to create an environment that nurtures both your well-being and the planet.
+				<p>
+					At Maravilla Kivu Eco Resort, expect a warm welcome and exceptional hospitality throughout your stay. Indulge in delicious meals, including small Sambaza fish freshly caught from Lake Kivu and exotic fruits handpicked from the resort's fantastic garden. Breathe in the fresh air and take delight in observing over 24 species of birds that call the garden home. Relax and meditate in this serene haven, offering a restful atmosphere for rejuvenation.
 				</p>
 			</div>
 			<div class="section2-image">
 				<img src="./images/boat-lake.jpg">
 			</div>
+		</div>
+
+		<div class="accommodations" id="accommodations">
+			<h2>Accommodations</h2>
+			<div class="rooms row">
+				<div class="card col-lg-4" style="width:400px">
+					<img class="card-img-top" src="./images/King bed.jpeg" alt="Deluxe Double Room">
+					<div class="card-body">
+					  <h4 class="card-title">King Bed</h4>
+					  <a href="booking.html" class="btn btn-primary">Book Now</a>
+					</div>
+				  </div>
+				  <div class="card col-lg-4" style="width:400px">
+					<img class="card-img-top" src="./images/beds.jpeg" alt="Deluxe Twin Room">
+					<div class="card-body">
+					  <h4 class="card-title">Double Twin Beds</h4>
+					  <a href="booking.html" class="btn btn-primary">Book Now</a>
+					</div>
+				  </div>
+				  <div class="card col-lg-4" style="width:400px">
+					<img class="card-img-top" src="./images/tent2.jpg" alt="Tent">
+					<div class="card-body">
+					  <h4 class="card-title">Single Tent</h4>
+					  <a href="booking.html" class="btn btn-primary">Book Now</a>
+					</div>
+				  </div>
+				  
+			</div>
+		</div>
+
+		<div class="amenities">
+			<h2>Amenities</h2>
+			<div class="amenities row">
+				<div class="col-sm-4" class="icons">
+					<ion-icon name="restaurant-outline" class="icons"></ion-icon>
+					<h5>Breakfast provided from 6-11am</h3>
+				</div>
+				<div class="col-sm-4">
+					<ion-icon name="car-outline" class="icons"></ion-icon>
+					<h5>Free Parking on premisis</h3>
+				</div>
+				<div class="col-sm-4">
+					<ion-icon name="wifi-outline" class="icons"></ion-icon>
+					<h5>Free Wifi</h3>
+				</div>
+			</div>
+			
 		</div>
 
 		<div class="section3" id="section3">
@@ -97,6 +165,7 @@
 				
 			</div>
 		</div>
+		
 
 		<!--Gallery-->
 		<div class="gallery-header" id="section4">
@@ -104,13 +173,17 @@
             <h2>Gallery</h2>
           </div>
          <!-- Carousel -->
-        <div id="slides" class="carousel slide" data-bs-ride="carousel">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
         <!-- Indicators/dots -->
         <div class="carousel-indicators">
         <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
         <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+		<button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+		<button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+		<button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+		<button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
         </div>
     
         <!-- The slideshow/carousel -->
@@ -123,6 +196,18 @@
         </div>
         <div class="carousel-item">
             <img src="images/boat-lake.jpg" alt="Boat" class="d-block w-100">
+        </div>
+		<div class="carousel-item">
+            <img src="images/fronthouse.jpeg" alt="fronthouse" class="d-block w-100">
+        </div>
+		<div class="carousel-item">
+            <img src="images/tent2.jpg" alt="tent" class="d-block w-100">
+        </div>
+		<div class="carousel-item">
+            <img src="images/restaurant.jpeg" alt="tent" class="d-block w-100">
+        </div>
+		<div class="carousel-item">
+            <img src="images/frontfacade.JPG" alt="tent" class="d-block w-100">
         </div>
         </div>
     
@@ -142,12 +227,12 @@
 			  <div class="row">
 				<!-- Logo Section -->
 				<div class="col-md-4 text-center footer-logo">
-					<img src="./images/maravillalogo.png" alt="Logo" class="img-fluid">
+					<img src="./images/maravillalogowhite.png" alt="Logo" class="img-fluid">
 				  </div>
 				<!-- Address Section -->
 				<div class="col-md-4">
 				  <h5>Contact Us</h5>
-				  <p>Phone Number: +(250)788302124</p>
+				  <p>Phone Number: +(250)798464326</p>
 				  <p>Email: maravillakivu@gmail.com</p>
 				</div>
 				<!-- Social Media Section -->
@@ -162,7 +247,7 @@
 					<a href="https://twitter.com/your_handle/" target="_blank" class="social-icon twitter">
 						<ion-icon name="logo-twitter"></ion-icon>
 					</a>
-					<a href="" target="_blank" class="social-icon twitter">
+					<a href="https://wa.me/250798464326" target="_blank" class="social-icon twitter">
 						<ion-icon name="logo-whatsapp"></ion-icon>
 					</a>
 					
