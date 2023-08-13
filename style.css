@@ -11,6 +11,8 @@
 
 h2 {
     color: #2C5C8C;
+    font-weight: 800;
+    
 }
 
 p {
@@ -19,11 +21,16 @@ p {
 
 .navbar {
     display: flex;
-    background-color: #ffff;
+    background-color: transparent;
     height: 15vh;
-    position: fixed;
+    position: relative;
     top: 0%;
     overflow: hidden;
+  }
+.menu {
+    height: 4vh;
+    font-size: 30px;
+    color: white;
   }
 
   .navbar-nav {
@@ -47,7 +54,7 @@ p {
   }
 
   .navbar-brand {
-    width: 7.5%;
+    width: 6rem;
     height: auto;
   }
 
@@ -55,10 +62,20 @@ p {
     width: 100%;
 }
 
+.nav-link img {
+    width: 200%
+}
+
 .booknow{
-    box-shadow: 3px 3px #3a3a3a;
-    background-color: #189AB4;
+    border: 2px solid white;
+    border-radius: 30px;
     color: #F5F5F5;
+    padding: 10px 14px 10px 14px;
+}
+
+.booknow :hover {
+    background-color: white;
+    color: black;
 }
 
 .booknow a{
@@ -80,8 +97,8 @@ body {
 
 /* Header Styles */
 .welcome-header{
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(./images/nighthouse.jpeg) center/cover no-repeat;
-    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./images/frontfacade.JPG) center/cover no-repeat;
+    height: 80vh;
     width: 100%;
     position: relative;
 }
@@ -108,9 +125,7 @@ header {
 
 .gallery-header {
     text-align: center;
-    padding-top: 20vh;
-    padding-bottom: 10vh;
-    border: 2px solid black;
+    padding: 10vh;
 }
 
 .gallery-header h2 {
@@ -123,7 +138,7 @@ header {
 }
 
 .booking-form {
-    padding-top: 15vh;
+    padding-top: 10vh;
     background-color: #F5F5F5;
 }
 
@@ -134,6 +149,10 @@ header {
 }
 
 .booking-pretext {
+    padding: 6vh 3vw 3vh 6vw;
+}
+
+.booking-options {
     padding: 6vh 3vw 3vh 6vw;
 }
 
@@ -179,38 +198,31 @@ header {
 }
 
 .section2 {
-    height: auto;
-    padding: 2rem;
+    height: 60vh;
     display: flex;
-    background-color: #075264;
-    
 }
 
 
 .section2-text {
-    padding: 1vw;
     width: 45%;
-    padding-top: 4rem;
+    padding: 4rem;
+    background-color: #2C5C8C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.section2-text h2{
-    font-family: 'Spectral SC';
-    font-weight: 800;
-    font-size: 3vw;
-    color: #78c8d8;
-}
+
 .section2-text p {
     font-weight: 500;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     color: #dfdddd;
     font-family: 'Lora';
+    
 }
 
 .section2-image {
     width: 55%;
-    height: auto;
-    /* border: 2vw solid #F5F5F5; */
     overflow: hidden;
-    padding: 4vw;
 }
 
 .section2-image img {
@@ -243,8 +255,37 @@ header {
     color: #3a3a3a;
 }
 
+.accommodations h2 {
+    text-align: center;
+    font-weight: 800;
+    margin: 6vh;
+}
+.rooms {
+    justify-content: center;
+}
+.card {
+    margin: 2vw;
+}
 
+.card img {
+    width: 100%;
+    padding: 0;
+}
 
+.amenities {
+    background: whitesmoke;
+    text-align: center;
+    padding: 5rem;
+    color:#189AB4;
+}
+.amenities h2 {
+    font-weight: 800;
+    color:#189AB4;
+}
+
+.amenities ion-icon{
+    font-size: 10vh;
+}
 
 footer {
     min-height: 20vh;
