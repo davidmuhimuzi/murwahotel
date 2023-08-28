@@ -6,7 +6,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', serif;
+    font-family: 'Lato', regular;
+    /* font-family: 'Oswald', sans-serif; */
 }
 
 h2 {
@@ -26,7 +27,12 @@ p {
     position: relative;
     top: 0%;
     overflow: hidden;
+    transition: background-color 0.3s ease-in-out;
   }
+  .navbar.scrolled {
+    background-color:#2C5C8C;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
 .menu {
     height: 4vh;
     font-size: 30px;
@@ -39,7 +45,7 @@ p {
   }
 
   .nav-item {
-    margin-right: 2vw;
+    margin-right: 5vw;
   }
 
   .nav-item a {
@@ -47,6 +53,7 @@ p {
     align-items: center;
     color: #202020;
     /* font-family: 'Alata', sans-serif; */
+    font-size: 2rem;
   }
 
   .nav-item img {
@@ -67,10 +74,11 @@ p {
 }
 
 .booknow{
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 30px;
     color: #F5F5F5;
     padding: 10px 14px 10px 14px;
+    margin-right: 1vh;
 }
 
 .booknow :hover {
@@ -81,6 +89,7 @@ p {
 .booknow a{
     color: #dfdddd;
 }
+
 /* Global Styles */
 body {
     background-color: #F5F5F5;
@@ -98,7 +107,7 @@ body {
 /* Header Styles */
 .welcome-header{
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./images/frontfacade.JPG) center/cover no-repeat;
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     position: relative;
 }
@@ -160,7 +169,7 @@ header {
     height: auto;
     padding: 2rem;
     display: flex;
-    background-color: #F5F5F5;
+    background-color: #ffffff;
     
 }
 
@@ -175,17 +184,19 @@ header {
     font-size: 3vw;
     color: #2C5C8C;
     padding: 2rem 0 1rem 0;
+    width: auto;
 }
 .section1-text p {
     font-weight: 500;
-    font-size: 1.3vw;
+    /* font-size: 1.3vw; */
     color: #3a3a3a;
+    /* font-family: 'Roboto', sans-serif */
 }
 
 .section1-image {
     width: 55%;
     height: auto;
-    border: 2vw solid #075264;
+    /* border: 2vw solid #075264; */
     display: flex;
     overflow: hidden;
     padding: 4vw;
@@ -196,39 +207,65 @@ header {
     position: relative;
     
 }
+/*explore button design*/
+.explore-button {
+    display: inline-block;
+    border: 2px solid #3a3a3a;
+    color: #3a3a3a;
+    padding: 10px 20px;
+    /* border-radius: 30px; */
+    text-decoration: none;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
 
+.explore-button:hover {
+    transform: scale(1.1);
+    background-color: #2C5C8C;
+    border: transparent;
+    color: white;
+
+}
+/*section 2*/
 .section2 {
-    height: 60vh;
+    height: 100vh;
     display: flex;
+    flex-direction: row-reverse;
 }
 
 
 .section2-text {
-    width: 45%;
+    width: 55%;
     padding: 4rem;
-    background-color: #2C5C8C;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+   
 }
 
 .section2-text p {
     font-weight: 500;
     font-size: 1.3vw;
-    color: #dfdddd;
-    font-family: 'Lora';
+    color: #3a3a3a;
+    font-family: 'Roboto', sans-serif;
     
 }
 
 .section2-image {
-    width: 55%;
+    width: 50%;
     overflow: hidden;
+    
 }
 
 .section2-image img {
     width: 100%;
     position: relative;
-    
+    height: 100vh;
 }
 
 .section3 h2 {
@@ -254,38 +291,90 @@ header {
     text-align: center;
     color: #3a3a3a;
 }
-
 .accommodations h2 {
     text-align: center;
     font-weight: 800;
-    margin: 6vh;
-}
-.rooms {
+    margin: 8vh;
+  }
+  .card {
+    position: relative;
+    overflow: hidden;
+    height: 300px; 
+    margin: 2vh;
+    border-radius: 0;
+  }
+
+  .card-img {
+    height: 50vh; 
+    object-fit: cover; 
+    border-radius: 0;
+  }
+
+  .card-img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none; 
+    flex-direction: column;
     justify-content: center;
-}
-.card {
-    margin: 2vw;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.3s ease;
+  }
+
+  .card:hover .card-img-overlay {
+    display: flex; 
+  }
+
+  .card-img-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .card-button {
+    border: 1px solid #ffff;
+    color: #ffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+  }
+  .card-button:hover {
+    background-color: #2C5C8C;
+    border: transparent;
+    color: white;
+
 }
 
-.card img {
-    width: 100%;
-    padding: 0;
-}
 
+/* Center-align the text within the card */
 .amenities {
     background: whitesmoke;
     text-align: center;
-    padding: 5rem;
-    color:#189AB4;
+    padding: 2rem;
+    color: #2C5C8C;
 }
 .amenities h2 {
+    
     font-weight: 800;
-    color:#189AB4;
+    color:#2C5C8C;
+}
+.amenities h5{
+    width: auto;
+
 }
 
 .amenities ion-icon{
-    font-size: 10vh;
+    font-size: 80px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
+.amenities ion-icon:hover{
+    transform: scale(1.1);
+    color: #3a3a3a; 
+}
+
 
 footer {
     min-height: 20vh;
@@ -307,7 +396,6 @@ footer {
   .social-icon {
     display: inline-block;
     color: #f5f5f5;
-    
     font-size: 24px;
     width: 40px;
     height: 40px;
@@ -324,10 +412,77 @@ footer {
     blue: #2d54a1
     Dark blue: #273576 */
 
+@media (max-width: 767px) {
+        .section1 {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding-top: 0;
+        }
+    
+        .section1-text {
+            width: 100%;
+            text-align: center;
+        }
+    
+        .section1-text h2 {
+            font-size: 2rem; 
+        }
+    
+        .section1-text p {
+            font-size: 1rem;
+        }
+    
+        .section1-image {
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+    
+        .section1-image img {
+            width: 100%;
+            margin-top: 2rem;
+        }
+        .section2 {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    
+        .section2-text {
+            width: 100%;
+            padding: 2rem;
+            text-align: center;
+        }
+        .section2-text p{
+            font-size: 3vw;
+        }
+        .section2-image {
+            width: auto;
+            margin-bottom: 1.5rem;
+        }
+    
+        .section2-image img {
+            width: 100%;
+            margin-top: 1.5rem;
+        }
+        .card-img-overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            transition: background-color 0.3s ease;
+          }
+        .card-img{
+            height: 100%;
+        }
 
-
-
-
-
-
+}
+    
+/*eplore maravilla*/
 
