@@ -27,6 +27,10 @@ p {
     top: 0%;
     overflow: hidden;
   }
+
+.navbar-toggler {
+    border: transparent;
+}
 .menu {
     height: 4vh;
     font-size: 30px;
@@ -67,10 +71,10 @@ p {
 }
 
 .booknow{
-    border: 2px solid white;
-    border-radius: 30px;
+    border: 1px solid white;
+    border-radius: 20px;
     color: #F5F5F5;
-    padding: 10px 14px 10px 14px;
+    padding: 10px 16px 10px 16px;
 }
 
 .booknow :hover {
@@ -97,7 +101,7 @@ body {
 
 /* Header Styles */
 .welcome-header{
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./images/frontfacade.JPG) center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0, 0, 0, 0.132)),url(./images/side-house-sunset.jpg) center/cover no-repeat;
     height: 80vh;
     width: 100%;
     position: relative;
@@ -198,14 +202,16 @@ header {
 }
 
 .section2 {
-    height: 60vh;
+    height: 30vh;
     display: flex;
+    overflow: hidden;
+    border: 2px solid black;
 }
 
 
 .section2-text {
     width: 45%;
-    padding: 4rem;
+    padding: 4vw;
     background-color: #2C5C8C;
     display: flex;
     justify-content: center;
@@ -227,7 +233,6 @@ header {
 
 .section2-image img {
     width: 100%;
-    position: relative;
     
 }
 
@@ -291,11 +296,11 @@ footer {
     min-height: 20vh;
     background-color: #2C5C8C;
     text-align: center;
-    padding: 3vi;
+    padding: 3rem 1rem 3rem 1rem;
 }
 
 .footer-logo img{
-    width: 50%;
+    width: 40%;
 }
 
 /* Add your custom CSS styles here */
