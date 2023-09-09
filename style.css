@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,700&family=Poppins&family=Spectral+SC:wght@400;500&family=Spectral:ital,wght@0,200;0,400;1,400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 
 /* Reset CSS */
@@ -6,7 +6,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', regular;
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
     /* font-family: 'Oswald', sans-serif; */
 }
 
@@ -19,82 +20,102 @@ h2 {
 p {
     line-height: 1.8;
 }
-
-.navbar {
-    display: flex;
-    background-color: transparent;
-    height: 15vh;
-    position: relative;
-    top: 0%;
-    overflow: hidden;
-    transition: background-color 0.3s ease-in-out;
-  }
-  .navbar.scrolled {
-    background-color:#2C5C8C;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+/*navbar*/
+.navigator{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./images/frontfacade.JPG) center/cover no-repeat;
+    height: 100vh;
 }
-.menu {
-    height: 4vh;
-    font-size: 30px;
+.navbar{
+    background-color: transparent;
+}
+.navbar-nav li {
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+   margin-left: 60px;
+  }
+  
+    .navbar-logo {
+      max-height: 60px;
+    }
+    
+    .navbar-book-button {
+      margin-right: 15px;
+    }
+    .navbar-nav .nav-item {
+      text-align: center;
+    }
+    .navbar-nav .nav-item .nav-link {
+    color: white;
+    position: relative;
+    transition: color 0.3s;
+    text-decoration: none;
+  }
+  .navbar-nav .nav-item.active .nav-link {
     color: white;
   }
-
-  .navbar-nav {
-    display: flex;
-    list-style-type: none;
+          
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #ffffff;
+    text-decoration: none;
   }
-
-  .nav-item {
-    margin-right: 5vw;
-  }
-
-  .nav-item a {
-    display: flex;
-    align-items: center;
-    color: #202020;
-    /* font-family: 'Alata', sans-serif; */
-    font-size: 2rem;
-  }
-
-  .nav-item img {
-    margin-right: 5px;
-  }
-
-  .navbar-brand {
-    width: 6rem;
-    height: auto;
-  }
-
-  .navbar-brand img {
+          
+  .navbar-nav .nav-item .nav-link::before {
+    content: "";
+    position: absolute;
     width: 100%;
-}
+    height: 2px;
+    background-color: #ffffff;
+    bottom: -4px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+  }
+          
+  .navbar-nav .nav-item .nav-link:hover::before {
+    transform: scaleX(1);
+  }
+  .navbar-book-button {
+     margin-right: auto;
+     background-color: transparent;
+     border: 2px solid white;
+     color: white;
+     text-decoration: none;
+     padding: 10px 20px;
+     transition: transform 0.3s ease, color 0.3s ease;
+  }
 
-.nav-link img {
-    width: 200%
-}
+  .navbar-book-button:hover{
+      background-color: #ffffff;
+      color:black;
+      border: none;
+      text-decoration: none;
+      transform: scale(1.1);
+  }
+  .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      font-size: 24px;
+    }
 
-.booknow{
-    border: 1px solid white;
-    border-radius: 30px;
-    color: #F5F5F5;
-    padding: 10px 14px 10px 14px;
-    margin-right: 1vh;
-}
 
-.booknow :hover {
-    background-color: white;
-    color: black;
-}
 
-.booknow a{
-    color: #dfdddd;
-}
+
+
+
+
+
+
+
 
 /* Global Styles */
 body {
     background-color: #F5F5F5;
-    
-
 }
 
 .container {
@@ -104,20 +125,6 @@ body {
 }
 
 
-/* Header Styles */
-.welcome-header{
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./images/frontfacade.JPG) center/cover no-repeat;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-}
-
-header {
-    background-color: transparent;
-    padding: 1vw;
-    width: 100%;
-    overflow: visible;
-}
 
 
 .text-header {
@@ -164,48 +171,52 @@ header {
 .booking-options {
     padding: 6vh 3vw 3vh 6vw;
 }
+/*the section one about marvilla*/
 
 .section1 {
     height: auto;
     padding: 2rem;
     display: flex;
     background-color: #ffffff;
-    
+    align-items: center;
 }
 
 .section1-text {
-    width: 45%;
+    width:50%;
     padding:2vw;
-    top: 50%;
-    
+    top: 30%;
+    padding: 2rem;
+}
+.section1-text h4{
+    font-weight: 60;
+    font-size: 14px;
+    text-transform: uppercase;
+
 }
 .section1-text h2{
     font-weight: 800;
-    font-size: 3vw;
-    color: #2C5C8C;
-    padding: 2rem 0 1rem 0;
+    font-size: 42px;
+    padding: 2rem 0 2rem 0;
     width: auto;
 }
 .section1-text p {
-    font-weight: 500;
-    /* font-size: 1.3vw; */
+    font-weight: 800;
+    font-size: 14px; 
     color: #3a3a3a;
-    /* font-family: 'Roboto', sans-serif */
 }
 
 .section1-image {
-    width: 55%;
+    width: 50%;
     height: auto;
-    /* border: 2vw solid #075264; */
     display: flex;
     overflow: hidden;
-    padding: 4vw;
+    padding: 2vw;
 }
 
 .section1-image img {
     width: 100%;
     position: relative;
-    
+    padding : 2rem;
 }
 /*explore button design*/
 .explore-button {
@@ -213,7 +224,6 @@ header {
     border: 2px solid #3a3a3a;
     color: #3a3a3a;
     padding: 10px 20px;
-    /* border-radius: 30px; */
     text-decoration: none;
     margin-top: 1rem;
     font-weight: 700;
@@ -230,45 +240,78 @@ header {
 
 }
 /*section 2*/
-.section2 {
-    height: 100vh;
+/* .section2 {
+    height: auto;
     display: flex;
     flex-direction: row-reverse;
 }
 
 
 .section2-text {
-    width: 55%;
+    width: 50%;
     padding: 4rem;
-    background-color: #ffffff;
+    background-color: #ffff;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
-   
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 .section2-text p {
     font-weight: 500;
-    font-size: 1.3vw;
-    color: #3a3a3a;
+    font-size: 1.2vw;
+    color: #000;
     font-family: 'Roboto', sans-serif;
-    
+    text-align: left;
 }
 
 .section2-image {
     width: 50%;
     overflow: hidden;
-    
+    margin-left: 30px;
 }
 
 .section2-image img {
     width: 100%;
     position: relative;
     height: 100vh;
+} */
+
+/*new overlay for section 2*/
+.bedimage { 
+    overflow: hidden;
+}
+.bedimage img{
+    width: 100%;
+    height: auto;
+    filter: brightness(0.4);
+}
+h3 {
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
 }
 
-.section3 h2 {
+.room-button{
+    display: inline-block;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.room-button:hover{
+    transform: scale(1.1);
+    background-color: #ffffff;
+    border: transparent;
+    color: black;
+}
+/*end of section 2*/
+/* .section3 h2 {
     padding: 10vh;
     text-align: center;
     justify-content: center;
@@ -277,21 +320,10 @@ header {
 
 .section3 li {
     text-decoration: none;
-}
+} */
 
-.activities {
-    padding: 2vw;
-}
-.activities img {
-    width: 100%;
-    padding-top: 1vh;
-}
 
-.activities h3{
-    text-align: center;
-    color: #3a3a3a;
-}
-.accommodations h2 {
+.Activities h2 {
     text-align: center;
     font-weight: 800;
     margin: 8vh;
@@ -342,9 +374,9 @@ header {
     text-transform: capitalize;
   }
   .card-button:hover {
-    background-color: #2C5C8C;
+    background-color: #ffffff;
     border: transparent;
-    color: white;
+    color: black;
 
 }
 
@@ -353,7 +385,7 @@ header {
 .amenities {
     background: whitesmoke;
     text-align: center;
-    padding: 2rem;
+    padding: 3rem;
     color: #2C5C8C;
 }
 .amenities h2 {
@@ -361,18 +393,23 @@ header {
     font-weight: 800;
     color:#2C5C8C;
 }
+.amenities p{
+    font-weight: 600;
+    font-size: 14px;
+    color:#3a3a3a;
+}
 .amenities h5{
     width: auto;
-
 }
 
-.amenities ion-icon{
+.amenities ion-icon {
     font-size: 80px;
+    color: #3a3a3a;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 .amenities ion-icon:hover{
     transform: scale(1.1);
-    color: #3a3a3a; 
+    color: #2C5C8C; 
 }
 
 
@@ -413,6 +450,7 @@ footer {
     Dark blue: #273576 */
 
 @media (max-width: 767px) {
+        
         .section1 {
             flex-direction: column-reverse;
             align-items: center;
@@ -441,29 +479,7 @@ footer {
             width: 100%;
             margin-top: 2rem;
         }
-        .section2 {
-            display: flex;
-            flex-direction: column-reverse;
-            align-items: center;
-        }
-    
-        .section2-text {
-            width: 100%;
-            padding: 2rem;
-            text-align: center;
-        }
-        .section2-text p{
-            font-size: 3vw;
-        }
-        .section2-image {
-            width: auto;
-            margin-bottom: 1.5rem;
-        }
-    
-        .section2-image img {
-            width: 100%;
-            margin-top: 1.5rem;
-        }
+        
         .card-img-overlay {
             position: absolute;
             top: 0;
@@ -481,8 +497,20 @@ footer {
         .card-img{
             height: 100%;
         }
+        .section2{
+            width: 100% !important;
+        }
+        .bedimage{
+            height: 30vh;
+           overflow: hidden;
+        }
+        .bedimage img{
+            width: auto;
+            
+        }
+    
+        
 
 }
     
 /*eplore maravilla*/
-
