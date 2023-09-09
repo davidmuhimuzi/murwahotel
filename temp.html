@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Transparent Navbar</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styles for the transparent navbar */
+    .transparent-navbar {
+      background-color: transparent !important;
+      border: none;
+    }
+    .navbar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar-toggler {
+      order: -1;
+    }
+    .navbar-logo {
+      text-align: center;
+      flex: 1;
+    }
+    .navbar-logo img {
+      display: inline-block;
+      max-width: 100%;
+      height: auto;
+    }
+    .welcome-header {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./images/frontfacade.JPG) center/cover no-repeat;
+      height: 100vh;
+      width: 100%;
+      /* position: relative; */
+      display: absolute;
+      justify-content: center;
+      align-items: center;
+    }
+    .overlay-text {
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-header">
+    <div class="overlay-text">
+      <h1>Welcome to Maravilla Kivu</h1>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light transparent-navbar">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-logo">
+        <a class="navbar-brand" href="#">
+          <img src="images/maravillalogowhite.png" alt="Logo">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Rooms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Galleries</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-brand">
+        <a class="btn btn-primary" href="#">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Link to Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
