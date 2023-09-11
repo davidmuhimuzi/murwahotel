@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,700&family=Poppins&family=Spectral+SC:wght@400;500&family=Spectral:ital,wght@0,200;0,400;1,400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 
 /* Reset CSS */
@@ -6,7 +6,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', serif;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 h2 {
@@ -18,74 +19,130 @@ h2 {
 p {
     line-height: 1.8;
 }
+/*navbar*/
+.bookingnavigator{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url(./images/Balcon.jpeg) center/cover no-repeat;
+    height: 70vh;
+}
+.roomnagivator{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url(./images/Balcon.jpeg) center/cover no-repeat;
+    height: 100vh;
+}
+.activitiesnagivator{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url(./images/Piroguelac.JPG) center/cover no-repeat;
+    height: 100vh;
+}
 
-.navbar {
-    display: flex;
+.explorenavigator{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url(./images/facadedroite.jpg) center/cover no-repeat;
+    height: 100vh;
+}
+.navigator{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./images/frontfacade.JPG) center/cover no-repeat;
+    height: 100vh;
+}
+.navbar{
     background-color: transparent;
-    height: 15vh;
-    position: relative;
-    top: 0%;
-    overflow: hidden;
+}
+.navbar-nav {
+    margin: 0 auto;
+    display: table;
   }
-.menu {
-    height: 4vh;
-    font-size: 30px;
+.navbar-nav li {
+    font-weight: 400;
+    font-size: 16px;
+   margin-left: 60px;
+  }
+  
+    .navbar-logo {
+      max-height: 60px;
+    }
+    
+    .navbar-book-button {
+      margin-right: 15px;
+    }
+    .navbar-nav .nav-item {
+      text-align: center;
+    }
+    .navbar-nav .nav-item .nav-link {
+    color: white;
+    position: relative;
+    transition: color 0.3s;
+    text-decoration: none;
+  }
+  .navbar-nav .nav-item.active .nav-link {
     color: white;
   }
-
-  .navbar-nav {
-    display: flex;
-    list-style-type: none;
+          
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #ffffff;
+    text-decoration: none;
   }
-
-  .nav-item {
-    margin-right: 2vw;
-  }
-
-  .nav-item a {
-    display: flex;
-    align-items: center;
-    color: #202020;
-    /* font-family: 'Alata', sans-serif; */
-  }
-
-  .nav-item img {
-    margin-right: 5px;
-  }
-
-  .navbar-brand {
-    width: 6rem;
-    height: auto;
-  }
-
-  .navbar-brand img {
+          
+  .navbar-nav .nav-item .nav-link::before {
+    content: "";
+    position: absolute;
     width: 100%;
-}
+    height: 2px;
+    background-color: #ffffff;
+    bottom: -4px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+  }
+          
+  .navbar-nav .nav-item .nav-link:hover::before {
+    transform: scaleX(1);
+  }
+  .book-whatsapp{
+    display: inline;
+    color: #f5f5f5;
+    font-size: 42px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .book-whatsapp:hover{
+    background-color: #ffffff;
+      color:green;
+      border: none;
+      text-decoration: none;
+      transform: scale(1.1);
 
-.nav-link img {
-    width: 200%
-}
+  }
+  .navbar-book-button {
+     margin-right: 15px;
+     background-color: transparent;
+     border: 1px solid white;
+     color: white;
+     text-decoration: none;
+     padding: 10px 30px;
+     transition: transform 0.3s ease, color 0.3s ease;
+  }
 
-.booknow{
-    border: 2px solid white;
-    border-radius: 30px;
-    color: #F5F5F5;
-    padding: 10px 14px 10px 14px;
-}
+  .navbar-book-button:hover{
+      background-color: #ffffff;
+      color:black;
+      border: none;
+      text-decoration: none;
+      transform: scale(1.1);
+  }
+  .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      font-size: 24px;
+    }
 
-.booknow :hover {
-    background-color: white;
-    color: black;
-}
 
-.booknow a{
-    color: #dfdddd;
-}
 /* Global Styles */
 body {
-    background-color: #F5F5F5;
-    
-
+    background-color: #fffdfb;
 }
 
 .container {
@@ -95,20 +152,6 @@ body {
 }
 
 
-/* Header Styles */
-.welcome-header{
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./images/frontfacade.JPG) center/cover no-repeat;
-    height: 80vh;
-    width: 100%;
-    position: relative;
-}
-
-header {
-    background-color: transparent;
-    padding: 1vw;
-    width: 100%;
-    overflow: visible;
-}
 
 
 .text-header {
@@ -155,83 +198,113 @@ header {
 .booking-options {
     padding: 6vh 3vw 3vh 6vw;
 }
+/*the section one about marvilla*/
 
 .section1 {
     height: auto;
     padding: 2rem;
     display: flex;
-    background-color: #F5F5F5;
-    
+    background-color: #fffdfb;
+    align-items: center;
 }
 
 .section1-text {
-    width: 45%;
+    width:50%;
     padding:2vw;
-    top: 50%;
-    
+    top: 30%;
+    padding: 2rem;
+}
+.section1-text h4{
+    font-weight: 60;
+    font-size: 14px;
+    text-transform: uppercase;
+
 }
 .section1-text h2{
     font-weight: 800;
-    font-size: 3vw;
-    color: #2C5C8C;
-    padding: 2rem 0 1rem 0;
+    font-size: 42px;
+    padding: 2rem 0 2rem 0;
+    width: auto;
 }
 .section1-text p {
-    font-weight: 500;
-    font-size: 1.3vw;
+    font-weight: 800;
+    font-size: 14px; 
     color: #3a3a3a;
 }
 
 .section1-image {
-    width: 55%;
+    width: 50%;
     height: auto;
-    border: 2vw solid #075264;
     display: flex;
     overflow: hidden;
-    padding: 4vw;
+    padding: 2vw;
 }
 
 .section1-image img {
     width: 100%;
     position: relative;
-    
+    padding : 2rem;
+}
+/*explore button design*/
+.explore-button {
+    display: inline-block;
+    border: 2px solid #3a3a3a;
+    color: #3a3a3a;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-weight: 800;
+    /* font-family: 'Roboto', sans-serif; */
+    text-transform: capitalize;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.section2 {
-    height: 60vh;
-    display: flex;
-}
-
-
-.section2-text {
-    width: 45%;
-    padding: 4rem;
+.explore-button:hover {
+    transform: scale(1.1);
     background-color: #2C5C8C;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    border: transparent;
+    color: white;
 
-.section2-text p {
-    font-weight: 500;
-    font-size: 1.3vw;
-    color: #dfdddd;
-    font-family: 'Lora';
-    
 }
+/*section 2*/
 
-.section2-image {
-    width: 55%;
+
+/*new overlay for section 2*/
+.bedimage { 
     overflow: hidden;
+    height: 60vh;
 }
-
-.section2-image img {
+.bedimage img{
     width: 100%;
-    position: relative;
-    
+    height: auto;
+    filter: brightness(0.4);
+}
+h3 {
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
 }
 
-.section3 h2 {
+.room-button{
+    display: inline-block;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.room-button:hover{
+    transform: scale(1.1);
+    background-color: #ffffff;
+    border: transparent;
+    color: black;
+}
+/*end of section 2*/
+/* .section3 h2 {
     padding: 10vh;
     text-align: center;
     justify-content: center;
@@ -240,52 +313,102 @@ header {
 
 .section3 li {
     text-decoration: none;
-}
+} */
 
-.activities {
-    padding: 2vw;
-}
-.activities img {
-    width: 100%;
-    padding-top: 1vh;
-}
 
-.activities h3{
-    text-align: center;
-    color: #3a3a3a;
-}
-
-.accommodations h2 {
+.Activities h2 {
     text-align: center;
     font-weight: 800;
-    margin: 6vh;
-}
-.rooms {
+    margin: 8vh;
+  }
+  .Activities p{
+    text-align: center;
+    font-weight: 800;
+  }
+  .card {
+    position: relative;
+    overflow: hidden;
+    height: 300px; 
+    margin: 2vh;
+    border-radius: 0;
+  }
+
+  .card-img {
+    height: 50vh; 
+    object-fit: cover; 
+    border-radius: 0;
+  }
+
+  .card-img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex; 
+    flex-direction: column;
     justify-content: center;
-}
-.card {
-    margin: 2vw;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.3s ease;
+  }
+
+  .card:hover .card-img-overlay {
+    display: flex; 
+  }
+
+  .card-img-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .card-button {
+    border: 1px solid #ffff;
+    color: #ffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+  }
+  .card-button:hover {
+    background-color: #ffffff;
+    border: transparent;
+    color: black;
+
 }
 
-.card img {
-    width: 100%;
-    padding: 0;
-}
 
+/* Center-align the text within the card */
 .amenities {
     background: whitesmoke;
     text-align: center;
-    padding: 5rem;
-    color:#189AB4;
+    padding: 3rem;
+    color: #2C5C8C;
 }
 .amenities h2 {
+    
     font-weight: 800;
-    color:#189AB4;
+    color:#2C5C8C;
+}
+.amenities p{
+    font-weight: 600;
+    font-size: 14px;
+    color:#3a3a3a;
+}
+.amenities h5{
+    width: auto;
 }
 
-.amenities ion-icon{
-    font-size: 10vh;
+.amenities ion-icon {
+    font-size: 80px;
+    color: #3a3a3a;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
+.amenities ion-icon:hover{
+    transform: scale(1.1);
+    color: #2C5C8C; 
+}
+
 
 footer {
     min-height: 20vh;
@@ -307,7 +430,6 @@ footer {
   .social-icon {
     display: inline-block;
     color: #f5f5f5;
-    
     font-size: 24px;
     width: 40px;
     height: 40px;
@@ -324,10 +446,350 @@ footer {
     blue: #2d54a1
     Dark blue: #273576 */
 
+@media (max-width: 767px) {
+        
+        .section1 {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 0;
+        }
+    
+        .section1-text {
+            width: 100%;
+            text-align: center;
+        }
+    
+        .section1-text h2 {
+            font-size: 2rem; 
+        }
+    
+        .section1-text p {
+            font-size: 1rem;
+        }
+    
+        .section1-image {
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+    
+        .section1-image img {
+            width: 100%;
+            margin-top: 2rem;
+        }
+        
+        .card-img-overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            transition: background-color 0.3s ease;
+          }
+        .card-img{
+            height: 100%;
+        }
+        .section2{
+            width: 100% !important;
+        }
+        .bedimage{
+            height: 50vh;
+           overflow: hidden;
+        }
+        .bedimage img{
+            width: 100vh;
+            
+        }
+       
+    
+        
 
+}
+    /*explore maravilla*/
+    .explore1 {
+        height: auto;
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        background-color: #fffdfb;
+        align-items: center;
+       
+    }
+    
+    .explore1-text{
+        flex: 1;
+        padding-right: 10px;
+        padding: 5rem;
+    }
+    
+    .explore1-text h2{
+        font-weight: 800;
+        font-size: 42px;
+        padding: 2rem 0 2rem 0;
+        width: auto;
+        
+    }
+    .explore1-text p {
+        font-weight: 800;
+        font-size: 25.2px; 
+        color: #3a3a3a;
+    }
+    
+    .explore1-image {
+        width: 50%;
+        height: auto;
+        overflow: hidden;
+        margin-right: 4rem;
+        padding: 0 2rem;
+    }
+    
+    .explore1-image img {
+        width: 100%;
+        position: relative;
+    }
+    .explore2 {
+        text-align: center;
+        padding: 8rem 25rem;
+      }
+      .explore2 h2{
+        font-size: 42px;
+        font-weight: 800;
+      }
+      .explore2 p{
+        font-size: 25.2px;
+        font-weight: 600;
+      }
+    .explore3{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .explore3-image{
+          padding: 0 5rem;
+          width: 100%;
+          height: auto;
+    }
+    .explore3-image img{
+      width: 100%;
+      
+    }
+    .explore3-text{
+      padding: 5rem;
+    }
+    .explore3-text p{
+        font-weight: 800;
+        font-size: 25.2px; 
+        color: #3a3a3a;
+    }
+    @media (max-width: 768px) {
+        .explore1 {
+          flex-direction: column;
+          align-items: center;
+          padding: 2rem; 
+        }
+      
+        .explore1-text {
+          flex: 1;
+          padding: 2rem; 
+        }
+        .explore1-text h2{
+            text-align: center;
+        }
+        .explore1-text p{
+            text-align: center;
+        }
+      
+        .explore1-image {
+          width: 100%;
+          margin-right: 0;
+        }
+      
+        .explore2 {
+          padding: 4rem 2rem; 
+        }
+      
+        .explore2 h2 {
+          font-size: 32px; 
+        }
+      
+        .explore2 p {
+          font-size: 20px; 
+        }
+      
+        .explore3-image {
+          padding: 0 2rem; 
+        }
+      
+        .explore3-text {
+          padding: 2rem; 
+        }
 
-
-
-
-
-
+      
+        .explore3-text p {
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+/*Activites maravilla*/
+.heading-activities {
+    text-align: center;
+    padding: 8rem 25rem;
+  }
+  .heading-activities h2{
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .activities1 {
+      height: auto;
+      padding: 2rem;
+      display: flex;
+      flex-direction: row;
+      background-color: #fffdfb;
+      align-items: center;
+     
+  }
+  
+  .activities1-text{
+      flex: 1;
+      padding-right: 10px;
+  
+      padding: 5rem;
+  }
+  
+  .activities1-text h2{
+      font-weight: 800;
+      font-size: 42px;
+      padding: 2rem 0 2rem 0;
+      width: auto;
+  }
+  .activities1-text p {
+      font-weight: 800;
+      font-size: 14px; 
+      color: #3a3a3a;
+  }
+  
+  .activities1-image {
+      width: 50%;
+      height: auto;
+      overflow: hidden;
+      margin-right: 4rem;
+      padding: 0 2rem;
+  }
+  
+  .activities1-image img {
+      width: 100%;
+      position: relative;
+  }
+  
+  
+  
+  .activities2 {
+      height: auto;
+      padding: 2rem;
+      display: flex;
+      flex-direction: row;
+      background-color: #fffdfb;
+      align-items: center;
+  }
+  
+  .activities2-text{
+      flex: 1;
+      padding-right: 10px;
+      padding: 0 5rem 0 2rem;
+  }
+  
+  .activities2-text h2{
+      font-weight: 800;
+      font-size: 42px;
+      padding: 2rem 0 2rem 0;
+      width: auto;
+  }
+  .activities2-text p {
+      font-weight: 800;
+      font-size: 14px; 
+      color: #3a3a3a;
+  }
+  
+  .activities2-image {
+      width: 50%;
+      height: auto;
+      overflow: hidden;
+      margin-right: 4rem;
+      padding: 0 2rem;
+  }
+  
+  .activities2-image img {
+      width: 100%;
+      position: relative;
+  }
+  @media (max-width: 767px) {
+      .heading-activities {
+      padding: 4rem 2rem;
+    }
+  
+      .activities1{
+          flex-direction: column-reverse;
+          align-items: center;
+          padding: 0;
+      }
+      .activities1-text {
+              width: 100%;
+              text-align: center;
+      }
+      
+      .activities1-text h2 {
+              font-size: 2rem;
+              text-align: center;
+      }
+      
+      .activities1-text p {
+              font-size: 1rem;
+              text-align: center;
+      }
+      
+      .activities1-image {
+                margin: 0;
+                padding: 0;
+              width: 100%;
+              margin-bottom: 1.5rem;
+      }
+      
+      .activities1-image img {
+              width: 100%;
+              margin-top: 2rem;
+      }
+      .activities2{
+          flex-direction: column;
+          align-items: center;
+          padding: 0;
+      }
+      .activities2-text {
+              width: 100%;
+              text-align: center;
+      }
+      
+      .activities2-text h2 {
+              font-size: 2rem; 
+      }
+      
+      .activities2-text p {
+              font-size: 1rem;
+      }
+      
+      .activities2-image {
+              width: 100%;
+              margin-bottom: 1.5rem;
+              margin: 0;
+              padding: 0;
+      }
+      
+      .activities2-image img {
+              width: 100%;
+              margin-top: 2rem;
+      }
+  }
