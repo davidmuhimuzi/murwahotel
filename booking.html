@@ -17,43 +17,54 @@
 		<link href="https://fonts.googleapis.com/css2?family=Alata&family=Instrument+Sans:wght@400;600&family=Lora:ital,wght@0,400;1,500;1,700&family=Montserrat:wght@500&family=Playfair+Display:ital,wght@0,400;1,500;1,600&family=Poppins:wght@200;300;400;500;800&family=Spectral+SC:wght@400;500&family=Spectral:ital,wght@0,200;0,400;1,400&display=swap" rel="stylesheet">
 	</head>
 <body>
-  <nav class="navbar navbar-expand-md">
-    <div class="navbar-brand img-fluid">
-      <a class="nav-link" href="home.html">
-          <img src="images/maravillalogo.png" alt="Logo" class="img-fluid">
-      </a>
-    </div>   
-    <div class="navbare navbar-collapse justify-content-end">
-      <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="home.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#accommodations">Accommodations</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#section3">Activities</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#section4">Gallery</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link booknow" href="booking.html">Book Now</a>
-      </li>
-      </ul>
+
+  <div class="bookingnavigator">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">
+        <img src="./images/maravillalogo.png" alt="Logo" class="navbar-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto text-white">
+          <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item ">
+          <a class="nav-link" href="explore.html">Explore</a>
+          </li>
+          <li class="nav-item ">
+          <a class="nav-link" href="room.html">Accommodations</a>
+          </li>
+          <li class="nav-item ">
+          <a class="nav-link" href="activities.html">Activities</a>
+          </li>
+          
+        </ul>
+        <a href="booking.html" class="navbar-book-button">Book Now</a>
+        
+        </div>
+      </div>
+    </nav>
+    <div class="welcome-header">
+      <div class="overlay-text position-absolute top-50 start-50 text-center text-white" style="font-weight: 1000;">
+        <h1>Book with us</h1>
+      </div>
     </div>
-  </nav> 
-  <div class="welcome-header">
+  </div>
+
   </div>
     <!--Booking form-->
     <div class="booking-form">
       <div class="booking-options">
-        <h2>Booking</h2>
         <p>
           Please create a reservation using the following options:
         </p>
         <div class="bookingdotcom">
           <p>Book using Booking.com</p>
+          
           <button type="button" class="btn btn-primary">Booking.com</button>
         </div>
         <div class="whatsapp-booking">
