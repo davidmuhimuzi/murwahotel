@@ -109,7 +109,7 @@ p {
       color:green;
       border: none;
       text-decoration: none;
-      transform: scale(1.1);
+      transform: scale(0.85);
 
   }
   .navbar-book-button {
@@ -119,7 +119,7 @@ p {
      color: white;
      text-decoration: none;
      padding: 10px 30px;
-     transition: transform 0.3s ease, color 0.3s ease;
+     transition: transform 0.5s ease, color 0.5s ease;
   }
 
   .navbar-book-button:hover{
@@ -127,7 +127,7 @@ p {
       color:black;
       border: none;
       text-decoration: none;
-      transform: scale(1.1);
+      transform: scale(0.85);
   }
   .overlay-text {
       position: absolute;
@@ -256,11 +256,11 @@ body {
     font-weight: 800;
     /* font-family: 'Roboto', sans-serif; */
     text-transform: capitalize;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.5s ease, color 0.5s ease;
 }
 
 .explore-button:hover {
-    transform: scale(1.1);
+  transform: scale(0.85);
     background-color: #2C5C8C;
     border: transparent;
     color: white;
@@ -295,10 +295,10 @@ h3 {
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
     text-align: center;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.5s ease, color 0.5s ease;
 }
 .room-button:hover{
-    transform: scale(1.1);
+  transform: scale(0.85);
     background-color: #ffffff;
     border: transparent;
     color: black;
@@ -402,10 +402,10 @@ h3 {
 .amenities ion-icon {
     font-size: 80px;
     color: #3a3a3a;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.5s ease, color 0.5s ease;
 }
 .amenities ion-icon:hover{
-    transform: scale(1.1);
+  transform: scale(0.85);
     color: #2C5C8C; 
 }
 
