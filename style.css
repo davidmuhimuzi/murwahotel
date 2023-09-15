@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 h2 {
@@ -554,7 +554,7 @@ footer {
     }
     .explore2 {
         text-align: center;
-        padding: 8rem 25rem;
+        padding: 5rem 16rem;
       }
       .explore2 h2{
         font-size: 42px;
@@ -583,7 +583,7 @@ footer {
     }
     .explore3-text p{
         font-weight: 800;
-        font-size: 25.2px; 
+        font-size: 20px; 
         color: #3a3a3a;
     }
     @media (max-width: 768px) {
@@ -638,10 +638,10 @@ footer {
 /*Activites maravilla*/
 .heading-activities {
     text-align: center;
-    padding: 8rem 25rem;
+    padding: 5rem 20rem;
   }
-  .heading-activities h2{
-    font-size: 28px;
+  .heading-activities p{
+    font-size: 24px;
     font-weight: 600;
   }
   .activities1 {
@@ -727,7 +727,7 @@ footer {
       width: 100%;
       position: relative;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 989px) {
       .heading-activities {
       padding: 4rem 2rem;
     }
