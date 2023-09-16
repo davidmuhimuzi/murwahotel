@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Transparent Navbar</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    <style>
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .image {
+            width: 50px; /* Adjust the image size as needed */
+            height: 50px; /* Adjust the image size as needed */
+            border-radius: 50%;
+            margin: 10px;
+            position: absolute;
+        }
+
+        /* Customize the spiral path by adjusting the top and left properties */
+        .image:nth-child(1) {
+            top: 0;
+            left: 0;
+        }
+
+        .image:nth-child(2) {
+            top: 20px;
+            left: 20px;
+        }
+
+        .image:nth-child(3) {
+            top: 40px;
+            left: 40px;
+        }
+
+        /* Add more styles for additional images */
+
+        /* Rotate images for a spiral effect */
+        .image:nth-child(odd) {
+            transform: rotate(calc(45deg * var(--n)));
+        }
+
+        .image:nth-child(even) {
+            transform: rotate(calc(-45deg * var(--n)));
+        }
+  </style>
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="image" style="--n: 1;"><img src="images/bedroom.JPG" alt="Bedroom"></div>
+    <div class="image" style="--n: 2;"><img src="images/living room.jpeg" alt="Living Room"></div>
+    <div class="image" style="--n: 3;"><img src="images/boat-lake.jpg" alt="Boat"></div>
+    <div class="image" style="--n: 4;"><img src="images/fronthouse.jpeg" alt="Front House"></div>
+    <div class="image" style="--n: 5;"><img src="images/tent2.jpg" alt="Tent"></div>
+    <div class="image" style="--n: 6;"><img src="images/restaurant.jpeg" alt="Restaurant"></div>
+    <div class="image" style="--n: 7;"><img src="images/frontfacade.JPG" alt="Front Facade"></div>
+    
+  </div>
+  <!-- Link to Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
