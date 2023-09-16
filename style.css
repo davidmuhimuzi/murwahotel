@@ -42,7 +42,7 @@ p {
     height: 100vh;
 }
 .navbar{
-    background-color: transparent;
+    background-color: white;
 }
 .navbar-nav {
     margin: 0 auto;
@@ -65,17 +65,17 @@ p {
       text-align: center;
     }
     .navbar-nav .nav-item .nav-link {
-    color: white;
+    color: black;
     position: relative;
     transition: color 0.3s;
     text-decoration: none;
   }
-  .navbar-nav .nav-item.active .nav-link {
+  /* .navbar-nav .nav-item.active .nav-link {
     color: white;
-  }
+  } */
           
   .navbar-nav .nav-item .nav-link:hover {
-    color: #ffffff;
+    color: #0AC2C2;
     text-decoration: none;
   }
           
@@ -115,17 +115,16 @@ p {
   .navbar-book-button {
      margin-right: 15px;
      background-color: transparent;
-     border: 1px solid white;
-     color: white;
+     border: 1px solid black;
+     color: black;
      text-decoration: none;
      padding: 10px 30px;
      transition: transform 0.5s ease, color 0.5s ease;
   }
 
   .navbar-book-button:hover{
-      background-color: #ffffff;
-      color:black;
-      border: none;
+      background-color: black;
+      color:white;
       text-decoration: none;
       transform: scale(0.85);
   }
