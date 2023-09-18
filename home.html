@@ -11,49 +11,46 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
+
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Alata&family=Instrument+Sans:wght@400;600&family=Lora:ital,wght@0,400;1,500;1,700&family=Montserrat:wght@500&family=Playfair+Display:ital,wght@0,400;1,500;1,600&family=Poppins:wght@200;300;400;500;800&family=Spectral+SC:wght@400;500&family=Spectral:ital,wght@0,200;0,400;1,400&display=swap" rel="stylesheet">
 	</head>
 	<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="20">
 		<div class="navigator">
-			<nav class="navbar navbar-expand-lg ">
+			<nav class="navbar navbar-expand-lg px-5 fixed-top">
 				<div class="container-fluid">
-				  <a class="navbar-brand" href="home.html">
-					<img src="./images/maravillalogo.png" alt="Logo" class="navbar-logo">
-				  </a>
-				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-					<span class="navbar-toggler-icon"></span>
-				  </button>
-				  <div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav mr-auto text-white">
-					  <li class="nav-item">
-						<a class="nav-link" href="home.html">Home</a>
-					  </li>
-					  <li class="nav-item ">
-						<a class="nav-link" href="explore.html">Explore</a>
-					  </li>
-					  <li class="nav-item ">
-						<a class="nav-link" href="room.html">Accommodations</a>
-					  </li>
-					  <li class="nav-item ">
-						<a class="nav-link" href="activities.html">Activities</a>
-					  </li>
-					  <li class="nav-item ">
-						<a href="https://www.booking.com/hotel/rw/maravilla-kivu-eco-resort.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaMMBiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuAKL6K-mBsACAdICJDk5OWI0ZDY1LTU5NjUtNDllZS1hZTJlLTA1NTcyZWViY2M3N9gCBuACAQ&sid=c7d9d68475c11795d4ca29a66f8d86a5&dest_id=9899451&dest_type=hotel&group_adults=2&hapos=1&hpos=1&no_rooms=1&req_adults=2&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1694352844&srpvid=77a15f631b2e0348&type=total&ucfs=1#tab-main" class="navbar-book-button">Book Now</a>
-					  </li>	
-					  	
-					</ul>
-					
-				  </div>
+					<a class="navbar-brand" href="home.html">
+						<img src="./images/maravillalogo.png" alt="Logo" class="navbar-logo">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav mx-auto"> 
+							<li class="nav-item">
+								<a class="nav-link" href="home.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="explore.html">Explore</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="accomodation.html">Accommodations</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="activities.html">Activities</a>
+							</li>
+						</ul>
+						<a href="https://www.booking.com/hotel/rw/maravilla-kivu-eco-resort.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaMMBiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuAKL6K-mBsACAdICJDk5OWI0ZDY1LTU5NjUtNDllZS1hZTJlLTA1NTcyZWViY2M3N9gCBuACAQ&sid=c7d9d68475c11795d4ca29a66f8d86a5&dest_id=9899451&dest_type=hotel&group_adults=2&hapos=1&hpos=1&no_rooms=1&req_adults=2&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1694352844&srpvid=77a15f631b2e0348&type=total&ucfs=1#tab-main" class="navbar-book-button ">Book Now</a>
+					</div>
 				</div>
 			</nav>
-			<div class="welcome-header">
-				<div class="overlay-text position-absolute top-50 start-50 text-center text-white">
-					<h1>Welcome to Maravilla Kivu</h1>
-				</div>
+		</div>
+        <div class="welcome-header">
+			<div class="overlay-text top-50 start-50 text-center text-white">
+				<span>Welcome to</span>
+				<h1>Maravilla Kivu Eco Resort</h1>
 			</div>
 		</div>
-        
 		
 
 		<div class="section1" id="section1">
@@ -78,14 +75,14 @@
 					<div class="position-absolute top-50 start-50 translate-middle text-white">
 						<h3>Rooms</h3>
 						<p>A cozy well-designed room that provides you with the comfort and peace of mother-nature</p>
-						<a href="#" class="room-button">Discover Our Rooms</a>
+						<a href="accomodation.html" class="room-button">Discover Our Rooms</a>
 					</div>
 				</div>
 			</div>
 		
 
 		<div class="amenities">
-			<h2>Amenities</h2>
+			<h2>AMENITIES</h2>
 			<div class="amenities row">
 				<div class="col-sm-4" class="icons">
 					<ion-icon name="restaurant-outline" class="icons"></ion-icon>
@@ -105,7 +102,7 @@
 
 		
 		<div class="Activities" id="Activities">
-			<h2>Activities</h2>
+			<h2>ACTIVITIES</h2>
 			<p> Discover your new Passion and find out what you can enjoy </p>
 			<div class="container mt-5">
 			  <div class="row">
@@ -114,7 +111,7 @@
 					<img src="./images/kayaking.jpeg" class="card-img" alt="Image 1">
 					<div class="card-img-overlay">
 					  <h5 class="card-title">Kayiking</h5>
-					  <a href="#" class="card-button">Learn More</a>
+					  <a href="activities.html" class="card-button">Learn More</a>
 					</div>
 				  </div>
 				</div>
@@ -122,8 +119,8 @@
 				  <div class="card">
 					<img src="./images/watchingBird.JPG" class="card-img" alt="Image 2">
 					<div class="card-img-overlay">
-					  <h5 class="card-title">Bird Tracking</h5>
-					  <a href="#" class="card-button">Learn More</a>
+					  <h5 class="card-title">Bird Watching</h5>
+					  <a href="activities.html" class="card-button">Learn More</a>
 					</div>
 				  </div>
 				</div>
@@ -132,7 +129,7 @@
 					<img src="./images/fishermen.JPG" class="card-img" alt="Image 3">
 					<div class="card-img-overlay">
 					  <h5 class="card-title">Fishing</h5>
-					  <a href="#" class="card-button">Learn More</a>
+					  <a href="activities.html" class="card-button">Learn More</a>
 					</div>
 				  </div>
 				</div>
