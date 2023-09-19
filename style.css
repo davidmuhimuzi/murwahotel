@@ -101,6 +101,7 @@ p {
   text-decoration: none;
   padding: 10px 30px;
   transition: transform 0.5s ease, color 0.5s ease;
+  
 }
 
 .navbar-book-button:hover {
@@ -114,13 +115,16 @@ p {
   
   .navbar-collapse {
       text-align: center;
+      
   }
 
 
   .navbar-nav li {
       margin-left: 0; 
       font-size: 18px;
+      margin-bottom: 40px;
   }
+ 
 
   .navbar-toggler {
       margin: 0 auto; 
@@ -130,6 +134,7 @@ p {
   .navbar-book-button {
       margin: 0 auto; 
       display: block;
+      
   }
 
 }
@@ -166,6 +171,16 @@ p {
       font-size: 32px;
       font-weight: 800;
     }
+    @media (max-width: 767px) {
+      .welcome-header h1 {
+          font-size: 40px; /* Adjust the font size for smaller screens */
+      }
+  
+      .welcome-header span {
+          font-size: 24px; /* Adjust the font size for smaller screens */
+      }
+  }
+   
 
 
 /* Global Styles */
@@ -346,17 +361,6 @@ h3 {
     border: transparent;
     color: black;
 }
-/*end of section 2*/
-/* .section3 h2 {
-    padding: 10vh;
-    text-align: center;
-    justify-content: center;
-    font-weight: 800;
-}
-
-.section3 li {
-    text-decoration: none;
-} */
 
 
 .Activities h2 {
@@ -483,16 +487,14 @@ footer {
     color: #0AC2C2;
   }
   
-  
-  @media (max-width: 992px) {
 
-  
-}
 /*  Light blue: #7bc7c5
     blue: #2d54a1
     Dark blue: #273576 */
 
 @media (max-width: 767px) {
+        
+
         
         .section1 {
             flex-direction: column-reverse;
@@ -919,7 +921,7 @@ transition: transform 0.5s ease, color 0.5s ease;
 }
 
 .room-book-button:hover {
-transform: scale(0.85);
+transform: translateZ(0);
 background-color: #2C5C8C;
 border: transparent;
 color: white;
